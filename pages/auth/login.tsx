@@ -1,10 +1,12 @@
 import { ReactElement } from "react"
 
-import AuthLayout from "../../components/layouts/AuthLayout"
+import AuthLayout from "@/components/layouts/AuthLayout"
+import { LoginForm } from "@/components/views/auth"
+
 
 const LoginPage = () => {
   return <>
-    login page here
+    <LoginForm />
   </>
 }
 

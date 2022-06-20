@@ -37,8 +37,8 @@ export const LoginForm = () => {
           <div className='flex justify-center flex-col items-center'>
             <p className="text-gray-400 text-sm">
               Hey, don&apos;t you have an account yet? Do not worry!</p>
-            <Link href='/auth/login'>
-              <span className="text-white underline text-sm mt-2">Click and Create</span></Link>
+            <Link href='/auth/register'>
+              <span className="text-white underline text-sm mt-2 cursor-pointer">Click and Create</span></Link>
           </div>
         </>
       )}

@@ -2,6 +2,7 @@ import { LockClosedIcon, UserIcon } from '@heroicons/react/solid';
 import Link from 'next/link'
 import * as z from 'zod';
 
+import { Button } from '@/components/interactables';
 import { Checkbox, Form, InputField } from '@/components/interactables/Form';
 
 const schema = z.object({
@@ -30,6 +31,9 @@ export const LoginForm = () => {
             <Checkbox id="remember-me" label='Remember me' registration={register('rememberMe')} labelClass='text-xs' />
             <Link href='/forgot-password'><span className='text-link text-white text-sm cursor-pointer underline'>I forgot my password</span></Link>
           </div>
+          <Button type="submit" className='w-full'>
+            Login
+          </Button>
         </>
       )}
     </Form>

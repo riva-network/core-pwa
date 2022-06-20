@@ -6,7 +6,6 @@ type AppProvidersProps = {
 
 const AppProviders = ({ children }: AppProvidersProps) => {
   return <>
-    App provider here
     {children}
   </>
 }

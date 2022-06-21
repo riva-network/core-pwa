@@ -1,7 +1,7 @@
-import { ReactElement } from "react"
+import { ReactNode } from "react"
 
 type DrawerProps = {
-  children: ReactElement,
+  children: ReactNode,
   isOpen: boolean,
   setIsOpen: (arg1: boolean) => void
 }
@@ -18,14 +18,11 @@ export const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
     >
       <section
         className={
-          " w-screen max-w-lg left-0 absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  " +
+          " w-[280px] max-w-lg left-0 absolute bg-metal h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  " +
           (isOpen ? " translate-x-0 " : " -translate-x-full ")
         }
       >
-        <article className="relative w-screen max-w-lg pb-10 flex flex-col space-y-6 overflow-y-scroll h-full">
-          <header className="p-4 font-bold text-lg">Header</header>
-          {children}
-        </article>
+        {children}
       </section>
       <section
         className=" w-screen h-full cursor-pointer "

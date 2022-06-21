@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media only screen and (min-width: 1350px) {
+  html {
+    zoom: 0.8;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -28,4 +34,46 @@ input:checked + div {
 }
 input:checked + div svg {
   @apply block;
+}
+
+@-webkit-keyframes rivaLogo {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(4deg);
+    transform: translate(0px, 0px) rotate(4deg);
+    -webkit-filter: drop-shadow(0px 3px 10px #3758ff);
+    filter: drop-shadow(0px 3px 10px #3758ff);
+  }
+  50% {
+    -webkit-transform: translate(0px, 10px) rotate(0deg);
+    transform: translate(0px, 10px) rotate(0deg);
+    -webkit-filter: drop-shadow(0px 3px 35px #3758ff);
+    filter: drop-shadow(0px 3px 35px #3758ff);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(-4deg);
+    transform: translate(0px, 0px) rotate(-4deg);
+    -webkit-filter: drop-shadow(0px 3px 35px #3758ff);
+    filter: drop-shadow(0px 3px 35px #3758ff);
+  }
+}
+
+@keyframes rivaLogo {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(4deg);
+    transform: translate(0px, 0px) rotate(4deg);
+    -webkit-filter: drop-shadow(0px 3px 10px #3758ff);
+    filter: drop-shadow(0px 3px 10px #3758ff);
+  }
+  50% {
+    -webkit-transform: translate(0px, 10px) rotate(0deg);
+    transform: translate(0px, 10px) rotate(0deg);
+    -webkit-filter: drop-shadow(0px 3px 35px #3758ff);
+    filter: drop-shadow(0px 3px 35px #3758ff);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(-4deg);
+    transform: translate(0px, 0px) rotate(-4deg);
+    -webkit-filter: drop-shadow(0px 3px 35px #3758ff);
+    filter: drop-shadow(0px 3px 35px #3758ff);
+  }
 }

@@ -12,6 +12,7 @@ module.exports = {
       },
       boxShadow: {
         primary: '0px 4px 33px rgb(55 88 255 / 67%)',
+        secondary: '0px 3px 6px #3758FF',
       },
       fontFamily: {
         sans: ['Nunito', ...defaultTheme.fontFamily.sans],
